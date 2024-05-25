@@ -6,6 +6,7 @@ import { Navbar } from "../../components/Navbar";
 import { EventsIntro } from "../../components/EventsIntro";
 import { EventsContent } from "../../components/EventsContent";
 import { fetchEventsData } from "../../services/eventService";
+import { ToTopButton } from "../../components/ToTopButton";
 
 const EventsPage: NextPage = ({
   eventsData,
@@ -17,6 +18,7 @@ const EventsPage: NextPage = ({
         <EventsIntro />
         <EventsContent events={eventsData} />
         <Initiatives />
+        <ToTopButton />
         <Footer />
       </>
     );

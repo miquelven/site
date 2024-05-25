@@ -5,6 +5,7 @@ import { Members } from "../../components/Members";
 import { Social } from "../../components/Social";
 import { Footer } from "../../components/Footer";
 import { fetchMembersData } from "../../services/contactService";
+import { ToTopButton } from "../../components/ToTopButton";
 
 const ContactPage: NextPage = ({
   members,
@@ -15,6 +16,7 @@ const ContactPage: NextPage = ({
       <GetInTouch />
       <Members members={members} />
       <Social />
+      <ToTopButton />
       <Footer />
     </div>
   );

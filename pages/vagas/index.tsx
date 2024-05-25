@@ -5,6 +5,7 @@ import { Navbar } from "../../components/Navbar";
 import { JobsIntro } from "../../components/JobsIntro";
 import { JobsContent } from "../../components/JobsContent";
 import { fetchJobsData } from "../../services/jobService";
+import { ToTopButton } from "../../components/ToTopButton";
 
 const JobsPage: NextPage = ({
   jobsData,
@@ -15,6 +16,7 @@ const JobsPage: NextPage = ({
         <Navbar />
         <JobsIntro />
         <JobsContent jobs={jobsData} />
+        <ToTopButton />
         <Footer />
       </>
     );
